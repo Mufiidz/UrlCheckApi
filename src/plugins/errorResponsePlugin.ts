@@ -1,7 +1,7 @@
 import type Elysia from "elysia";
 
-import { HttpException } from "@/errors/http-exception";
-import { errorResponse } from "@/shared/response";
+import { HttpException } from "../errors/http-exception";
+import { errorResponse } from "../shared/response";
 
 export const errorResponsePlugin = (app: Elysia) =>
 	app.error({ HttpException }).onError(({ code, error, set, path }) => {

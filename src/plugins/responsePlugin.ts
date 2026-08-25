@@ -1,7 +1,7 @@
 import type Elysia from "elysia";
 
-import { paginatedResponse, successResponse } from "@/shared/response";
-import { PaginatedResult, SuccessResult } from "@/shared/result";
+import { paginatedResponse, successResponse } from "../shared/response";
+import { PaginatedResult, SuccessResult } from "../shared/result";
 
 export const responsePlugin = (app: Elysia) =>
 	app.onAfterHandle(({ responseValue }) => {

@@ -1,8 +1,8 @@
 import type Elysia from "elysia";
 
-import { UrlCheckService } from "@/modules/url/urlcheck.service";
-import { CleanUrlBody, CleanUrlResponse } from "@/schema/clean.schema";
-import { ApiDocsResponse } from "@/schema/response.schema";
+import { UrlCheckService } from "../../modules/url/urlcheck.service";
+import { CleanUrlBody, CleanUrlResponse } from "../../schema/clean.schema";
+import { ApiDocsResponse } from "../../schema/response.schema";
 
 const urlCheckService = new UrlCheckService();
 

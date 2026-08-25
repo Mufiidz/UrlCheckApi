@@ -3,11 +3,11 @@ import { toJsonSchema } from "@valibot/to-json-schema";
 import { Elysia } from "elysia";
 import * as v from "valibot";
 
-import { errorResponsePlugin } from "@/plugins/errorResponsePlugin";
-import { responsePlugin } from "@/plugins/responsePlugin";
-import { v1Routes } from "@/routes/v1/index";
-import { ApiDocsSuccessResponse } from "@/schema/response.schema";
-import { SuccessResult } from "@/shared/result";
+import { errorResponsePlugin } from "./plugins/errorResponsePlugin";
+import { responsePlugin } from "./plugins/responsePlugin";
+import { v1Routes } from "./routes/v1";
+import { ApiDocsSuccessResponse } from "./schema/response.schema";
+import { SuccessResult } from "./shared/result";
 
 const app = new Elysia()
 	.use(

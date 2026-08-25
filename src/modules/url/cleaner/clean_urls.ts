@@ -1,4 +1,4 @@
-import { NotFoundException } from "@/errors/exceptions";
+import { NotFoundException } from "../../../errors/exceptions";
 import {
 	type ClearUrlsCatalog,
 	type RemovedUrl,

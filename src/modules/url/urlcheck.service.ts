@@ -1,5 +1,5 @@
-import { BadRequestException } from "@/errors/exceptions";
-import { SuccessResult } from "@/shared/result";
+import { BadRequestException } from "../../errors/exceptions";
+import { SuccessResult } from "../../shared/result";
 import { cleanUrl } from "./cleaner/clean_urls";
 
 export class UrlCheckService {
