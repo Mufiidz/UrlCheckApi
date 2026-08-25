@@ -10,7 +10,7 @@ let clearUrlsCatalog: ClearUrlsCatalog | null = null;
 async function loadCatalog(): Promise<ClearUrlsCatalog> {
 	if (clearUrlsCatalog) return clearUrlsCatalog;
 
-	const file = Bun.file("src/data/data_clearurls.json");
+	const file = Bun.file(`${process.cwd()}/src/data/data_clearurls.json`);
 	const isFileExist = await file.exists();
 	if (!isFileExist) {
 		throw new NotFoundException("ClearURLs catalog file not Found");
